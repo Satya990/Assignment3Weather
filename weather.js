@@ -48,39 +48,7 @@ function fetchData (forecast) {
   document.getElementById('wind').innerHTML =  forecast.wind.speed;
 
 }
-// function fetchData (forecast) {
-//   console.log(forecast)
-//   let html = '',
-//     cityName = forecast.city.name,
-//     country = forecast.city.country
 
-//   html += `<h3> Weather Forecast for ${cityName}, ${country}</h3>`
-//   forecast.list.forEach(function(forecastEntry, index, list){
-//     html += `<p>${forecastEntry.dt_txt}:${forecastEntry.main.temp}</p>`
-//   })
-
-//   $('#log').html(html)
-// }
-// function myfunction1(){
-//   var valuee = $('city').val();
-//   console.log(valuee+"sdvsd")
-// }
-// $(document).ready(function() {
-//   $.ajax({
-    
-//     url:"https://api.openweathermap.org/data/2.5/weather?q=${valuee}&appid=b656d2ec65f26971d05d479b5c2ed1d1"
-//   }).done(function(data) {
-//     $(".cityname").html(data.name)
-//     console.log(data)
-//   });
-// })
-
-// if(typeof jQuery!=='undefined'){
-//   console.log('jQuery Loaded');
-// }
-// else{
-//   console.log('not loaded yet');
-// }
 function startTime() {
   const today = new Date();
   let hours = today.getHours();
